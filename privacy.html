@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mio Discord Bot 隱私權政策。">
+  <title>隱私權政策｜Mio Discord Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell document">
+    <nav><a href="index.html">← 政策中心</a><a href="terms.html">服務條款 →</a></nav>
+    <header class="hero compact">
+      <p class="eyebrow">MIO · DISCORD BOT</p>
+      <h1>隱私權政策</h1>
+      <p class="updated">生效日期：2026 年 10 月 15 日</p>
+    </header>
+    <article>
+      <p>本政策說明自行架設的 Mio Discord Bot 如何處理資料。Mio 是在部署管理者裝置上執行的開源軟體；沒有由 Mio 上游作者代管的中央 Bot 服務。實際資料控制者是操作這個 Bot 的部署管理者，並由其設定模型供應商、允許使用者及本機資料保存方式。</p>
+      <h2>1. Bot 會處理哪些資料</h2>
+      <ul>
+        <li><strong>Discord 識別資料：</strong>Discord 使用者 ID，用於檢查部署管理者設定的允許清單、建立個別對話，以及在啟用主動聯絡時找到收件者。</li>
+        <li><strong>對話資料：</strong>你傳給 Bot 的文字、Bot 的回覆，以及產生回覆所需的相關對話上下文。Bot 不處理伺服器頻道對話、其他使用者的私訊、非允許清單使用者的內容，也不會因這個 Bot 讀取你的好友清單或其他 DM。</li>
+        <li><strong>主動聯絡狀態：</strong>若部署管理者開啟此功能，Mio 會在本機保存閒置檢查和下次聯絡時間所需的 Discord 使用者 ID 與時間資訊。此功能預設關閉。</li>
+        <li><strong>執行診斷資訊：</strong>後端可能記錄連線或處理錯誤，以利維護。請勿在支援請求中附上 Token、API 金鑰或私人對話。</li>
+      </ul>
+      <h2>2. 資料存放與保留</h2>
+      <p>對話、長期記憶及主動聯絡狀態會儲存在部署管理者電腦上的 Mio 本機資料庫與資料目錄；是否有備份及備份保留期限由部署管理者管理。除非部署管理者刪除相關資料或移除資料目錄，Mio 不會自動設定固定到期日。Discord 也可能依其服務運作保有訊息副本，這不受 Mio 本機刪除所控制。</p>
+      <h2>3. 傳送給模型供應商的資料</h2>
+      <p>為生成回覆，Mio 會把你的訊息及依對話情境選取的必要上下文傳送到部署管理者在 Mio「模型與 API」設定的模型供應商。供應商可能位於其他司法管轄區，並依其自己的條款與隱私政策處理資料，包括其資料保留或模型訓練政策。請查閱實際供應商的政策；不要透過 Bot 傳送不適合提供給該供應商的敏感資料。主動訊息若已開啟，也會使用該 Discord 對話的相關上下文向模型產生文字。</p>
+      <h2>4. Discord 與網站代管</h2>
+      <p>Discord 會依其<a href="https://discord.com/privacy">隱私權政策</a>處理帳號、訊息及 Bot 使用資料。這些政策頁由 GitHub Pages 代管；開啟網頁時，GitHub 可能依其<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">隱私權聲明</a>處理必要的連線技術資料。本頁本身不使用廣告、分析追蹤器、Cookie 或外部字型。</p>
+      <h2>5. 存取限制與安全</h2>
+      <p>只有部署管理者明確加入 <code>DISCORD_ALLOWED_USER_IDS</code> 的使用者，其一對一文字私訊才會進入 Mio 聊天流程。Bot Token 和模型 API 金鑰應由部署管理者保存在本機秘密設定，不應公開。裝置、資料庫與備份的實體安全由部署管理者負責；任何連上該裝置或取得憑證的人都可能接觸資料。</p>
+      <h2>6. 停用、查詢及刪除</h2>
+      <p>若要停止後續處理，請透過邀請 Bot 的 Discord 伺服器聯絡部署管理者，要求將你的使用者 ID 從允許清單移除，並關閉對你的主動聯絡。移除允許清單不會自動刪除既有資料。若要查詢或要求刪除 Mio 本機對話、記憶或備份，請向同一位部署管理者提出；管理者需在本機資料庫及其掌管的備份中處理。這不會刪除 Discord 或模型供應商依各自政策保有的副本。</p>
+      <h2>7. 未成年人</h2>
+      <p>Bot 不是為未成年人設計的獨立社交或照護服務。使用者應遵守所在地適用的年齡規定及 Discord 的條款；部署管理者應依所在地法令決定是否允許未成年人使用。</p>
+      <h2>8. 政策變更與聯絡</h2>
+      <p>資料處理方式變更時，部署管理者應更新本頁生效日期，並在重大變更時透過 Bot 所在的 Discord 伺服器通知使用者。隱私問題或資料請求請透過該伺服器聯絡實際部署管理者；Mio 上游專案作者無法存取你的本機資料庫，也無法代替部署管理者處理刪除請求。</p>
+    </article>
+    <footer><a href="terms.html">服務條款</a> · <a href="index.html">政策中心</a></footer>
+  </main>
+</body>
+</html>
